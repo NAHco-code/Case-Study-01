@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --cardBG: #FFFFFF;
+}
+
+body {
+    background-color: var(--cardBG);
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    font-weight:lighter;
+    font-size: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* header & nav links */
+.header h1 {
+    display: inline-block
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font family:'Archivo', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    /* margin-bottom: 0.625rem; */
+}
+
+h2 {
+    font-weight: 1000;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    background-color: var(--cardBG);
+    text-align: center;
+}
+
