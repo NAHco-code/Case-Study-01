@@ -1,43 +1,71 @@
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-:root {
+/* :root {
     --cardBG: #FFFFFF;
-}
+} */
 
 body {
-    background-color: var(--cardBG);
     font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight:lighter;
     font-size: 20px;
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
+    background-color: black;
 }
 
 /* header & nav links */
+.header {
+    border: 3px solid black; 
+    border-bottom: transparent;
+    background-color: #FFFFFF;
+    height: 100px;
+    
+}
+
 .header h1 {
-    display: inline-block
+    display: inline;
+    width: 300px;
+    height: 100px;
+    padding-top: 35px;
+    padding-left: 45px;
+    border: 4px solid black;
+    border-top: transparent;
+    border-left: transparent;
+    float: left;
+    background-color: #DED7CF;
+    font-size: 30px;
+    justify-content: center;
 }
 
 .header nav {
+    display: inline;
+    width: 800px;
     padding-top: 15px;
-    margin-right: 20px;
-    float: right;
+    background-color: #FFFFFF;
+  
 }
 
 .header nav ul {
     list-style-type: none;
-}
+    /* width: 500px; */
+    padding-top: 15px;
+    padding-right: 20px;
+    background-color: #FFFFFF;
+    display: flex;
+    float: right; 
+    align-items: flex-end;
+}    
 
 .header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+    width: 60px;
+    height: 30px;
+    padding: 25px 25px 25px 25px;
+    display:flex;
+    justify-content: center;
 }
 
 h1, 
@@ -46,7 +74,7 @@ h3,
 h4, 
 h5, 
 h6 {
-    font family:'Archivo', Arial, Helvetica, sans-serif;
+    font-family:'Archivo', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 35px;
     /* margin-bottom: 0.625rem; */
@@ -60,7 +88,97 @@ h2 {
 
 nav {
     display: flex;
-    background-color: var(--cardBG);
-    text-align: center;
+    background-color: #FFFFFF;
 }
 
+/* main content */
+.contents {
+    height: auto;
+    background:black;
+    display: flex; 
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.card {
+    display: flex;
+    position: static;
+    padding: 0px;
+    margin: 3px 4px 0px 0px;
+    background-color: #FFFFFF;
+    width: 30%;
+    flex-grow: 1;
+    text-align: center;
+    height: 550px;
+    float: left;
+    flex-shrink: 1;
+    flex-direction: column;
+}
+
+/* card images */
+figure {
+    display: flex;
+    align-self: center;
+    object-fit: contain;
+}
+
+/* #wrapper {
+    height: 550px; */
+}
+
+/* card labels */
+h2 {
+    font-size: 15px;
+    font-weight:900;
+    width: auto;
+    height: 590px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* hero card */
+#c0.card {
+    background-image: url("../images/portfolio1resized.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* about card*/
+#c1 h1 {
+    font-size: 30px;
+    padding-top: 150px;
+    padding-bottom: 20px;
+}
+
+#c1 p {
+    padding: 5px;
+}
+
+/*my studio card */
+#c2 {
+    background-image: url("../images/mystudio.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#c2 h2 {
+    color: #FFFFFF;
+}
+
+/* my pup stark card */
+#c5.card {
+    background-image: url("../images/portfolio2resized.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#c5 h2 {
+    color: #FFFFFF;
+}
+
+/* margin for bottom cards */
+#c9, #c10, #c11 {
+    margin-bottom: 3px;
+}
