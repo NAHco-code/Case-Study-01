@@ -9,17 +9,21 @@
 
 <body id="homelink">
     <!-- Header -->
-    <header class="header">
-        <h1>Kathryn Wilkinson</h1>
-        <!-- Navbar -->
-        <nav>
-            <ul>
-                <li><a href="#homelink">Home</a></li>
-                <li><a href="#aboutlink">About</a></li>
-                <li><a href="#projectslink">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class= "header">
+        <header>
+            <div class="headwrapper">
+                <h1>Kathryn Wilkinson</h1>
+            </div>
+            <!-- Navbar -->
+            <nav>
+                <ul>
+                    <li><a href="#homelink">Home</a></li>
+                    <li><a href="#aboutlink">About</a></li>
+                    <li><a href="#projectslink">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
 
     <!-- Body -->
     <main class="contents">
@@ -30,12 +34,18 @@
         </section>    
         
         <section class="card" id="c1">
-            <h1>Hi, I'm Kathryn Wilkinson</h1>
-            
-            <p>a content strategist, </p>
-            <p>design friend, conceptual </p>
-            <p>creative, brand magician, </p>
-            <p>& killer story teller.</p>
+            <div>
+                <h1>Hi, I'm <br/>
+                Kathryn <br/>
+                Wilkinson</h1>
+            </div>
+
+            <div>
+                <p>a content strategist, <br/>
+                <p>design friend, conceptual <br/>
+                <p>creative, brand magician, <br/>
+                <p>& killer story teller.</p>
+            </div> <!--- cite website used for wireframe - text in div above will be modified to be congruent with my personal skills and interests -->
 
             <h2><a href="#aboutlink">01_About Me ></a></h2>
         </section>
@@ -84,19 +94,17 @@
         </section>
     </main>
     
-    <nav>
-        <section>
-
-        </section>
-            <a href="#">Twitter</a>
+    <nav class="links">
+        <section class="bar">
+            <a class="center" href="#">Twitter</a>
         </section>
 
-        <section>
-            <a href="#">LinkedIn</a>
+        <section class="bar">
+            <a class="center" href="#">LinkedIn</a>
         </section>
 
-        <section>
-            <a href="#">Facebook</a>
+        <section class="bar">
+            <a class="center" href="#">Facebook</a>
         </section>
     </nav>
 
@@ -121,22 +129,22 @@
 
     <div class="projects" id="projectslink">
         <h1>My Latest Projects</h1>
-        <div>
+        <div class="projectwrapper">
 
-            <div>
+            <div class="projectcontent">
                 <hr><br/>
-                <img src="" alt="" title=""/>
+                <img id="proj1" src="" alt="" title=""/>
                 <br/>
-        
+
                 <h3>PROJECT NAME</h3>
                 <br/>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore blanditiis, maiores quis commodi accusantium culpa doloribus rem ex nam beatae quia aliquam numquam aspernatur vel fuga, harum autem cupiditate tempora, voluptates voluptatibus. Quae accusantium perferendis minus amet quidem non ipsum sed distinctio ab quo? Perspiciatis maxime amet aut fugit voluptatibus repellat velit cum dolorum quibusdam.</p>
                 <br/>
             </div>
-            <div>
+            <div class="projectcontent">
                 <hr><br/>
-                <img src="" alt="" title=""/>
+                <img id="proj2" src="" alt="" title=""/>
                 <br/>
         
                 <h3>PROJECT NAME</h3>
