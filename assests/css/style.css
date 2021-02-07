@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     /* width: 100%; */
-    min-width: 980px;
+    min-width: 1200px;
 }
 
 header {
@@ -240,7 +240,6 @@ a.center {
 }
 
 /* about */
-
 .about {
     background-color: #FFFFFF;
     display: flex;
@@ -273,4 +272,46 @@ a.center {
 
 a.view {
     text-decoration: underline;
+}
+
+/* projects */
+
+.projects {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    padding-left: 12%;
+    padding-right: 12%;
+    width: 75%;
+}
+
+.projects h1 {
+    width: 75%;
+    padding-left: 3.2%;
+    padding-bottom: 3%;
+}
+
+.projectwrapper {
+    display: flex;
+    /* flex-wrap: wrap; MOBILE */
+}
+
+img#proj1 {
+    height: 300px;
+    width: 400px;
+}
+
+img#proj2 {
+    height: 300px;
+    width: 395px;
+}
+
+.projectcontent {
+    display: flex; 
+    flex-direction: column;
+    margin: 0 30px;
+    width: 500px;
 }
