@@ -1,3 +1,5 @@
+/* global */
+
 * {
     padding: 0;
     margin: 0;
@@ -5,149 +7,149 @@
 
 /* :root {
     --cardBG: #FFFFFF;
+    --height-bar: 90px;
 } */
 
+
 body {
-    font-family: 'Roboto', 'Open Sans', sans-serif;
-    font-weight:lighter;
+    font-family: 'Elle Futura', 'Trebuchet MS', Arial, 'Roboto', 'Open Sans', sans-serif;
+    font-weight: 100;
     font-size: 20px;
-    margin: 0;
     display: flex;
     flex-direction: column;
+    /* width: 100%; */
+    min-width: 980px;
 }
 
-/* header & nav links */
-.header {
-    border: 3px solid black; 
-    border-bottom: transparent;
-    background-color: #FFFFFF;
-    height: 100px;
-    
-}
-
-.header h1 {
-    display: inline;
-    width: 300px;
-    height: 100px;
-    padding-top: 35px;
-    padding-left: 45px;
-    border: 4px solid black;
-    border-top: transparent;
-    border-left: transparent;
-    float: left;
-    background-color: #DED7CF;
-    font-size: 30px;
-    justify-content: center;
-}
-
-.header nav {
-    display: inline;
-    width: 800px;
-    padding-top: 15px;
-    background-color: #FFFFFF;
-  
-}
-
-.header nav ul {
-    list-style-type: none;
-    /* width: 500px; */
-    padding-top: 15px;
-    padding-right: 20px;
-    background-color: #FFFFFF;
-    display: flex;
-    float: right; 
-    align-items: flex-end;
-}    
-
-.header nav ul li {
-    width: 60px;
-    height: 30px;
-    padding: 25px 25px 25px 25px;
-    display:flex;
-    justify-content: center;
-}
-
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6 {
-    font-family:'Archivo', Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 35px;
-    /* margin-bottom: 0.625rem; */
-}
-
-h2 {
-    font-weight: 1000;
-    font-size: 18px;
-    text-transform: uppercase;
+header {
+    height: 90px;
+    width: 100%;
 }
 
 nav {
     display: flex;
-    background-color: #FFFFFF;
+    float: right;
 }
 
-/* main content */
-.contents {
-    height: auto;
-    background:black;
-    display: flex; 
-    flex-wrap: wrap;
-    position: relative;
+h1 {
+    font-size: 30px;
+    font-weight: 50;
+    justify-content: center;
 }
 
-.card {
-    display: flex;
-    position: static;
-    padding: 0px;
-    margin: 3px 4px 0px 0px;
-    background-color: #FFFFFF;
-    width: 30%;
-    flex-grow: 1;
-    text-align: center;
-    height: 550px;
-    float: left;
-    flex-shrink: 1;
-    flex-direction: column;
-}
-
-/* card images */
-figure {
-    display: flex;
-    align-self: center;
-    object-fit: contain;
-}
-
-/* #wrapper {
-    height: 550px; */
-}
-
-/* card labels */
 h2 {
     font-size: 15px;
-    font-weight:900;
+    font-weight: 900;
+    text-transform: uppercase;
     width: auto;
-    height: 590px;
+    height: 20px;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
+figure { /* card images */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-self: center;
+    object-fit: contain;
+} /* end global */
+
+/* header, nav, + links */
+.header {
+    background-color: #FFFFFF;
+    height: 90px;
+    width: 100%;
+    border-style: solid;
+    border-color: black;
+    /* border-bottom: transparent; */
+    border-width: 2px 2px 2px 2px;
+    display: flex;
+    white-space: nowrap;
+}
+
+.headwrapper {
+    width: 25%;
+    height: 90px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 4px 0px 0px;
+    float: left;
+    background-color: #DED7CF;
+    min-width: 310px;
+}
+
+.headwrapper h1 {
+    margin: 9% 14% 8% 14%;
+}
+
+nav.home {
+    width: auto;
+}    
+
+.header nav ul {
+    /* width: 500px; */
+    display: flex;
+    float: right; 
+    margin: 36px 30px 20px 34px;
+    background-color: #FFFFFF; 
+} 
+
+.header nav ul li {
+    width: 60px;
+    height: 30px;
+    padding: 0px 23px 0px 23px;
+    display:flex;
+    justify-content: flex-end;
+}
+
+/* main content */
+.contents {
+    height: auto;
+    width: 100%;
+    background:black;
+    display: flex; 
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+}
+
+.card {
+    width: 33%;
+    height: 475px;
+    margin: 1px 2px 2px 2px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #FFFFFF;
+    text-align: center;
+    /* float: left; */
+    /* flex-grow: 1;
+    flex-shrink: 1; */
+}
+
+/* card labels */
+.card h2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 /* hero card */
-#c0.card {
-    background-image: url("../images/portfolio1resized.jpg");
+#c0 {
+    background-image: url("../images/portfolio1.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    /* position:static;
+    z-index: 0; */
 }
 
 /* about card*/
 #c1 h1 {
     font-size: 30px;
-    padding-top: 150px;
+    padding-top: 105px;
     padding-bottom: 20px;
 }
 
@@ -157,9 +159,9 @@ h2 {
 
 /*my studio card */
 #c2 {
-    background-image: url("../images/mystudio.png");
+    background-image: url("../images/studio.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 #c2 h2 {
@@ -167,13 +169,13 @@ h2 {
 }
 
 /* my pup stark card */
-#c5.card {
+#c5 {
     background-image: url("../images/portfolio2resized.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
-#c5 h2 {
+#whitetxt h2 {
     color: #FFFFFF;
 }
 
