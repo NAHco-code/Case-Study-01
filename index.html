@@ -18,9 +18,9 @@
             <!-- Navbar -->
             <nav class="home">
                 <ul>
-                    <li><a href="#homelink">Home</a></li>
-                    <li><a href="#aboutlink">About</a></li>
-                    <li><a href="#projectslink">Projects</a></li>
+                    <li><a href="#homelink" title="View main content">Home</a></li>
+                    <li><a href="#aboutlink" title="View About section">About</a></li>
+                    <li><a href="#projectslink" title="View featured projects">Projects</a></li>
                 </ul>
             </nav>
         </header>
@@ -40,15 +40,13 @@
                 Kathryn <br/>
                 Wilkinson</h1>
             </div>
-
-            <div>
+            <div> <!--- placeholder content -->
                 <p>a content strategist, <br/>
                 <p>design friend, conceptual <br/>
                 <p>creative, brand magician, <br/>
                 <p>& killer story teller.</p>
             </div> <!--- placeholder content -->
-
-            <h2><a href="#aboutlink">01_About Me ></a></h2>
+            <h2><a href="#aboutlink" title="View About section">01_About Me ></a></h2>
         </section>
 
         <section class="card">
@@ -56,9 +54,9 @@
             <h2 id="whitetxt">02_My Studio</h2>
         </section>
 
-        <section class="card" id="c3">
-            <!--- link projects --->
-            <h2><a href="#projectslink">03_View My Projects ></a></h2>
+        <section class="card"><!--- link projects --->
+            <figure class="img" id="c3"></figure>
+            <h2 ><a target="_blank" rel="noopener noreferrer" href="https://github.com/NAHco-code" title="View github profile" id="whitetxt">03_View My Projects ></a></h2>
         </section>
 
         <section class="card" id="c4">
@@ -71,38 +69,41 @@
         </section>
 
         <section class="card" id="c6">
+            <h4>BS | Miami University</h4>
+            <p>Date (Aug 2008 - Aug 2013)</p>
+            <p class="downarrow">&#8595;</p>
+            <h4 class="spacing">Full Stack<br/>
+            Web Development<br/>
+            Certificate | Ohio State University</h4>
+            <p>Date (Jan 2021 - July 2021)</p>
             <h2>06_Education</h2>
         </section>
 
         <section class="card" id="c7">
-            <h2>07_Project</h2>
-        </section>
-
-        <section class="card" id="c8">
-            <h2 id="whitetxt">08_Skills</h2>
-        </section>
-
-        <section class="card">
-            <figure class="img" id="c9"></figure>
-            <h2 id="whitetxt">09_My Style</h2> 
-        </section>
-
-        <section class="card" id="c10">
             <div>
                 <h1>Get in touch with me so <br/>
                     we can collaborate on <br/>
                     your next project!</h1>
             </div>
-    
             <div>
                 <p><a href= "mailto: kathrynxwilk@gmail.com">kathrynxwilk@gmail.com</a><br/>
                 <p>614-477-2502<br/></p>
             </div>
-            <h2>10_Contact Me</h2>
+            <h2>07_Contact Me</h2>
         </section>
 
-        <section class="card" id="c11">
-            <h2>11_Project</h2>
+        <section class="card" id="c8">
+            <div id="skillswrapper">
+                <h4><img src="assests/images/success.png"> <span> HTML </span> </h4><br/>
+                <h4><img src="assests/images/success.png"> <span> CSS </span> </h4><br/>
+                <h4><img src="assests/images/success.png"> <span> JavaScript </span> </h4><br/>
+                <h4><img src="assests/images/success.png"> <span> Creative Concept </span></h4><br/>
+            </div>
+
+            <!-- *** SOLVE ***
+                <span id="check">&#10003;</span>
+                <span id="circle">&#8413;</span> -->
+            <h2 id="whitetxt">08_Skills</h2>
         </section>
     </main>
     

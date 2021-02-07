@@ -166,15 +166,23 @@ nav.home {
     flex-shrink: 1; */
 }
 
-/* card labels */
+/* == global card text */
 .card h2 {
     position: absolute;
     bottom: 0;
     width: 100%;
 }
 
-h2#whitetxt {
+#whitetxt {
     color: #FFFFFF;
+}
+
+#c6 h4 {
+    margin: 95px 0px 10px 0px;
+}
+
+#c6 h4.spacing {
+    margin-top: 0px;
 }
 
 /* hero card */
@@ -209,7 +217,9 @@ h2#whitetxt {
 }
 
 #c3 {
-    background-color: #F2F2F2;
+    background-image: url("../images/style.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #c4 {
@@ -228,33 +238,56 @@ h2#whitetxt {
     background-color: #D8E3E7;
 }
 
-#c7 {
+p.downarrow {
+    margin: 10px 0px 20px 0px;
+    font-size: 50px;
+    color: white;
+}
 
+#c7 {
+    
+}
+
+#c7 h1 {
+    font-size: 30px;
+    padding-top: 120px;
+    padding-bottom: 35px;
+}
+    
+#c7 p {
+    padding: 5px;
 }
 
 #c8 {
-    background-color: black;
+    background-color: #1A1A1A;
 }
 
-#c9 {
-    background-image: url("../images/style.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+#skillswrapper {
+    margin-top: 80px;
+    margin-left: 115px;
 }
 
-#c10 {
-    
+/* #c8 span { *** SOLVE ***
+    color: white;
+} */
+
+#c8 h4 {
+    color: white;
+    margin-bottom: 35px;
+    float: left;
+    clear: left;
 }
 
-#c10 h1 {
-        font-size: 30px;
-        padding-top: 120px;
-        padding-bottom: 35px;
-    }
-    
-#c10 p {
-        padding: 5px;
-    }
+h4 img {
+    width: 30px;
+    height: 30px;
+}
+
+h4 span {
+    position: relative;
+    bottom: 8px;
+    left: 13px;
+}
 
 /* bottom nav bar */
 .bar {
