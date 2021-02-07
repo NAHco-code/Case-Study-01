@@ -238,3 +238,39 @@ a.center {
     bottom: 0;
     width: 100%;
 }
+
+/* about */
+
+.about {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    padding-left: 12%;
+    padding-right: 12%;
+    width: 75%;
+}
+
+.about h1 {
+    width: 75%;
+    padding-left: 3.2%;
+    padding-bottom: 3%;
+}
+
+.aboutwrapper {
+    display: flex;
+    /* flex-wrap: wrap; MOBILE */
+}
+
+.aboutcontent {
+    display: flex; 
+    flex-direction: column;
+    margin: 0 30px;
+    width: 500px;
+}
+
+a.view {
+    text-decoration: underline;
+}
