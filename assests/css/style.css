@@ -55,7 +55,29 @@ figure { /* card images */
     display: flex;
     align-self: center;
     object-fit: contain;
-} /* end global */
+}
+
+    a:link {
+        color: black;
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: black;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #BAA58A;
+        text-decoration: none;
+    }
+    
+    a:active {
+        color: #BAA58A;
+        text-decoration: none;
+    }
+    
+ /* end global */
 
 /* header, nav, + links */
 .header {
@@ -182,4 +204,37 @@ nav.home {
 /* margin for bottom cards */
 #c9, #c10, #c11 {
     margin-bottom: 3px;
+}
+
+/* bottom nav bar */
+.bar {
+    border-style: solid;
+    border-color: black;
+    border-width: 3px 3px;
+    display: flex;
+    position: relative;
+    background-color: #FFFFFF;
+    width: 33%;
+    /* flex-grow: 1;
+    flex-shrink: 1; */
+    text-align: center;
+    height: 100px;
+}
+
+nav.links {
+    display: flex;
+    padding-bottom: 100px;
+}
+
+a.center {
+    font-size: 30px;
+    width: auto;
+    height: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
