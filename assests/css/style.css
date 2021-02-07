@@ -49,6 +49,16 @@ h2 {
     align-items: flex-end;
 }
 
+h3 {
+    font-size: 17px;
+    font-weight: 800;
+}
+
+p {
+    font-size: 17px;
+    font-weight:lighter;
+}
+
 figure { /* card images */
     width: 100%;
     height: 100%;
@@ -163,6 +173,10 @@ nav.home {
     width: 100%;
 }
 
+h2#whitetxt {
+    color: #FFFFFF;
+}
+
 /* hero card */
 #c0 {
     background-image: url("../images/portfolio1.jpg");
@@ -194,6 +208,14 @@ nav.home {
     color: #FFFFFF;
 }
 
+#c3 {
+    background-color: #F2F2F2;
+}
+
+#c4 {
+    background-color: #DED7CF;
+}
+
 /* my pup stark card */
 #c5 {
     background-image: url("../images/portfolio2resized.jpg");
@@ -201,14 +223,38 @@ nav.home {
     background-size: cover;
 }
 
-#whitetxt h2 {
-    color: #FFFFFF;
+/* education card */
+#c6 {
+    background-color: #D8E3E7;
 }
 
-/* margin for bottom cards */
-#c9, #c10, #c11 {
-    margin-bottom: 3px;
+#c7 {
+
 }
+
+#c8 {
+    background-color: black;
+}
+
+#c9 {
+    background-image: url("../images/style.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#c10 {
+    
+}
+
+#c10 h1 {
+        font-size: 30px;
+        padding-top: 120px;
+        padding-bottom: 35px;
+    }
+    
+#c10 p {
+        padding: 5px;
+    }
 
 /* bottom nav bar */
 .bar {
@@ -327,4 +373,10 @@ footer {
     border-style: solid;
     border-color: black;
     border-width: 3px 2px 2px 2px;
+}
+
+p.center {
+    display: flex;
+    justify-content: center;
+    padding: 27px;
 }
