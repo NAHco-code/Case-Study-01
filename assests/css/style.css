@@ -1,19 +1,12 @@
 /* global */
-
-/* :root {
-    --cardBG: #FFFFFF;
-    --height-bar: 90px;
-} */
-
-
 body {
-    font-family: /*'Elle Futura','Open Sans',*/  sans-serif;
+    font-family: sans-serif;
     font-weight: 100;
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    /* width: 100%; */
-    min-width: 1200px;
+    width: 100%;
+    min-width: 980px;
 }
 
 header {
@@ -28,12 +21,13 @@ nav {
 
 h1 {
     font-size: 30px;
-    font-weight: 50;
+    font-weight: 400;
     justify-content: center;
+    line-height: 1.25;
 }
 
 h2 {
-    font-family: 'Open Sans';
+    /* font-family: 'Open Sans'; */
     font-size: 15px;
     font-weight: 900;
     text-transform: uppercase;
@@ -47,12 +41,12 @@ h2 {
 
 h3 {
     font-size: 17px;
-    font-weight: 800;
+    font-weight: 400;
 }
 
 p {
     font-size: 17px;
-    font-weight:lighter;
+    font-weight:100;
 }
 
 figure { /* card images */
@@ -61,6 +55,11 @@ figure { /* card images */
     display: flex;
     align-self: center;
     object-fit: contain;
+}
+
+figure.img {
+    display: flex;
+    flex: 1 2 33%;
 }
 
 a:link {
@@ -89,7 +88,6 @@ a:active {
 .header {
     background-color: #FFFFFF;
     height: 90px;
-    width: 100%;
     border-style: solid;
     border-color: black;
     /* border-bottom: transparent; */
@@ -114,7 +112,7 @@ a:active {
 }
 
 .headwrapper h1 {
-    /* margin: 9% 14% 8% 14%; */
+    box-sizing:border-box;
     position: relative;
     top: 33%;
     width: 100%;
@@ -122,20 +120,23 @@ a:active {
     justify-content: center;
 }
 
-nav.home {
-    width: auto;
+.navwrapper {
+    box-sizing: border-box;
+    height: 90px;
+    width: 50%;
+    margin: 37px 15px 0 25px;
+    justify-content: flex-end;
 }    
 
-.header nav ul {
-    /* width: 500px; */
+ul {
+    box-sizing: content-box;
     display: flex;
-    float: right; 
-    margin: 36px 30px 20px 34px;
-    background-color: #FFFFFF; 
+    width: fit-content;
+    height:fit-content;    
 } 
 
 .header nav ul li {
-    width: 60px;
+    width: auto;
     height: 30px;
     padding: 0px 23px 0px 23px;
     display:flex;
@@ -154,6 +155,7 @@ nav.home {
 }
 
 .card {
+    box-sizing: border-box;
     width: 33%;
     height: 475px;
     margin: 1px 2px 2px 2px;
@@ -162,9 +164,7 @@ nav.home {
     position: relative;
     background-color: #FFFFFF;
     text-align: center;
-    /* float: left; */
-    /* flex-grow: 1;
-    flex-shrink: 1; */
+
 }
 
 /* == global card text */
@@ -178,21 +178,11 @@ nav.home {
     color: #FFFFFF;
 }
 
-#c6 h4 {
-    margin: 95px 0px 10px 0px;
-}
-
-#c6 h4.spacing {
-    margin-top: 0px;
-}
-
 /* hero card */
 #c0 {
     background-image: url("../images/portfolio1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* position:static;
-    z-index: 0; */
 }
 
 /* about card*/
@@ -239,14 +229,18 @@ nav.home {
     background-color: #D8E3E7;
 }
 
+#c6 h4 {
+    margin: 95px 0px 10px 0px;
+}
+
+#c6 h4.spacing {
+    margin-top: 0px;
+}
+
 p.downarrow {
     margin: 10px 0px 20px 0px;
     font-size: 50px;
     color: white;
-}
-
-#c7 {
-    
 }
 
 #c7 h1 {
@@ -265,12 +259,8 @@ p.downarrow {
 
 #skillswrapper {
     margin-top: 80px;
-    margin-left: 115px;
+    margin-left: 90px;
 }
-
-/* #c8 span { *** SOLVE ***
-    color: white;
-} */
 
 #c8 h4 {
     color: white;
@@ -299,8 +289,6 @@ h4 span {
     position: relative;
     background-color: #FFFFFF;
     width: 33%;
-    /* flex-grow: 1;
-    flex-shrink: 1; */
     text-align: center;
     height: 100px;
 }
@@ -339,12 +327,12 @@ a.center {
 .about h1 {
     width: 80%;
     margin: 0 2% 0 8%;
+    font-size: 25px;
 }
 
 .aboutwrapper {
     display: flex;
     justify-content: center;
-    /* flex-wrap: wrap; MOBILE */
 }
 
 .aboutcontent {
@@ -359,7 +347,6 @@ a.view {
 }
 
 /* projects section */
-
 .projects {
     background-color: #FFFFFF;
     display: flex;
@@ -375,14 +362,12 @@ a.view {
 .projects h1 {
     width: 80%;
     margin: 0 2% 0 8%;
-    /* padding-left: 3.2%;
-    padding-bottom: 3%; */
+    font-size: 25px;
 }
 
 .projectwrapper {
     display: flex;
     justify-content: center;
-    /* flex-wrap: wrap; MOBILE */
 }
 
 .projectcontent {
@@ -393,22 +378,11 @@ a.view {
 }
 
 .thumbnail:hover {
-    /* position: relative;
-    top: auto;
-    left: auto; */
     width: 100%;
     height: auto;
     display: block;
     z-index: 999;
 }
-
-/* .stay {
-    position: absolute;
-    top: 0px;
-    width: 25%;
-    margin-top: 10px;
-} */
-
 
 footer {
     background-color: #F2F2F2;
@@ -423,4 +397,10 @@ p.center {
     display: flex;
     justify-content: center;
     padding: 27px;
+}
+
+@media only screen and (max-width: 756px) {
+    .card {
+        width: 100%;
+    }
 }
