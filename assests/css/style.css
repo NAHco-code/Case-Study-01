@@ -1,10 +1,5 @@
 /* global */
 
-* {
-    padding: 0;
-    margin: 0;
-}
-
 /* :root {
     --cardBG: #FFFFFF;
     --height-bar: 90px;
@@ -12,7 +7,7 @@
 
 
 body {
-    font-family: 'Elle Futura', 'Trebuchet MS', Arial, 'Roboto', 'Open Sans', sans-serif;
+    font-family: /*'Elle Futura','Open Sans',*/  sans-serif;
     font-weight: 100;
     font-size: 20px;
     display: flex;
@@ -38,6 +33,7 @@ h1 {
 }
 
 h2 {
+    font-family: 'Open Sans';
     font-size: 15px;
     font-weight: 900;
     text-transform: uppercase;
