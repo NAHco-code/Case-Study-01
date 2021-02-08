@@ -118,7 +118,12 @@ a:active {
 }
 
 .headwrapper h1 {
-    margin: 9% 14% 8% 14%;
+    /* margin: 9% 14% 8% 14%; */
+    position: relative;
+    top: 33%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 nav.home {
@@ -187,7 +192,7 @@ nav.home {
 
 /* hero card */
 #c0 {
-    background-image: url("../images/portfolio1.jpg");
+    background-image: url("../images/portfolio1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     /* position:static;
@@ -322,7 +327,7 @@ a.center {
     width: 100%;
 }
 
-/* about */
+/* about section */
 .about {
     background-color: #FFFFFF;
     display: flex;
@@ -332,72 +337,82 @@ a.center {
     padding-bottom: 125px;
     padding-left: 12%;
     padding-right: 12%;
-    width: 75%;
+    width: fit-content;
 }
 
 .about h1 {
-    width: 75%;
-    padding-left: 3.2%;
-    padding-bottom: 3%;
+    width: 80%;
+    margin: 0 2% 0 8%;
 }
 
 .aboutwrapper {
     display: flex;
+    justify-content: center;
     /* flex-wrap: wrap; MOBILE */
 }
 
 .aboutcontent {
     display: flex; 
     flex-direction: column;
-    margin: 0 30px;
-    width: 500px;
+    margin: 2%;
+    width: 40%;
 }
 
 a.view {
     text-decoration: underline;
 }
 
-/* projects */
+/* projects section */
 
 .projects {
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 200px;
-    padding-left: 12%;
-    padding-right: 12%;
-    width: 75%;
+    padding-left: 15%;
+    padding-right: 15%;
+    width: fit-content;
 }
 
 .projects h1 {
-    width: 75%;
-    padding-left: 3.2%;
-    padding-bottom: 3%;
+    width: 80%;
+    margin: 0 2% 0 8%;
+    /* padding-left: 3.2%;
+    padding-bottom: 3%; */
 }
 
 .projectwrapper {
     display: flex;
+    justify-content: center;
     /* flex-wrap: wrap; MOBILE */
-}
-
-img#proj1 {
-    height: 300px;
-    width: 400px;
-}
-
-img#proj2 {
-    height: 300px;
-    width: 395px;
 }
 
 .projectcontent {
     display: flex; 
     flex-direction: column;
-    margin: 0 30px;
-    width: 500px;
+    margin: 2%;
+    width: 40%;
 }
+
+.thumbnail:hover {
+    /* position: relative;
+    top: auto;
+    left: auto; */
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 999;
+}
+
+/* .stay {
+    position: absolute;
+    top: 0px;
+    width: 25%;
+    margin-top: 10px;
+} */
+
 
 footer {
     background-color: #F2F2F2;
