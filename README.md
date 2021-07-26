@@ -1,4 +1,4 @@
-# Portfolio 01
+# Case Study 01
 
 ### Visuals
 
