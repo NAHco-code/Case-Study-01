@@ -4,9 +4,9 @@ First developer portfolio. Created 2 weeks into a 6 mo bootcamp program.
 
 ## Visuals
 
-![screenshot main](./assests/images/portfolio-screenshot1.png)
+![screenshot main](./assets/images/portfolio-screenshot1.png)
 
-![screenshot sections](./assests/images/portfolio-screenshot2.png)
+![screenshot sections](./assets/images/portfolio-screenshot2.png)
 
 ## Questions?
 
