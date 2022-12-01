@@ -1,15 +1,24 @@
-# Case Study 01
+# Portfolio 01
 
-### Visuals
+First developer portfolio. Created 2 weeks into a 6 mo bootcamp program.
+
+## Visuals
 
 ![screenshot main](./assests/images/portfolio-screenshot1.png)
 
 ![screenshot sections](./assests/images/portfolio-screenshot2.png)
 
-<!-- ### Links
+## Questions?
 
-[Portfolio] (https://nahco-code.github.io/Portfolio/)
+Please feel free to contact me with any questions via email or LinkedIn.
 
-[FanPage] (https://nahco-code.github.io/FanPage/)
+- Github: [kathrynwilkinson](https://github.com/kathrynwilkinson)
+- LinkedIn: [Kathryn Wilkinson](https://www.linkedin.com/in/kwilkinsonxx/)
+- Email: [kathrynxwilk@gmail.com](mailto:kathrynxwilk@gmail.com)
 
-[Refactor] (https://nahco-code.github.io/horiseon-accessibility-refactor/) -->
+## License
+
+This project is licensed under the MIT License.
+  For more information, please visit: [MIT](https://choosealicense.com/licenses/mit/)
+
+&copy; 2021 Kathryn Wilkinson
