@@ -1,6 +1,6 @@
 # Portfolio 01
 
-First developer portfolio. Created 2 weeks into a 6 mo bootcamp program.
+First developer portfolio. Created two weeks into a 6 mo bootcamp program.
 
 ## Visuals
 
