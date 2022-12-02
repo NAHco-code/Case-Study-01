@@ -10,7 +10,7 @@ First developer portfolio. Created two weeks into a 6 mo bootcamp program.
 
 ## Questions?
 
-Please feel free to contact me with any questions via email or LinkedIn.
+Get in contact with me via email or LinkedIn.
 
 - Github: [kathrynwilkinson](https://github.com/kathrynwilkinson)
 - LinkedIn: [Kathryn Wilkinson](https://www.linkedin.com/in/kwilkinsonxx/)
@@ -21,4 +21,4 @@ Please feel free to contact me with any questions via email or LinkedIn.
 This project is licensed under the MIT License.
   For more information, please visit: [MIT](https://choosealicense.com/licenses/mit/)
 
-&copy; 2021 Kathryn Wilkinson
+&copy; 2021 k.wilkinson
